@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" url="css/reset.css"/>
+    <title>Document</title>
+    <style>
+
+        #contener {
+            width: 700px;
+            height: 400px;
+            float: inherit;
+            background-color: indigo;
+        }
+        #contenu {
+            height: 400px;
+            width: 700px;
+            background-color: violet;
+        }
+        #pied {
+            height: 50px;
+            width: 700px;
+            background-color: thistle;
+        
+        }
+        #entete {
+            height: 50px;
+            background: inherit;
+        }
+        #menu {
+            width: 250px;
+            height: 500px;
+            float: left;
+        }
+        #i {
+            width: 100px;
+            height: 100px;
+            float: right;
+            background-color: cornflowerblue;
+        }
+        #part1 {
+            background-color: cadetblue;
+            float: top;
+            width: 250px;
+            height: 200px;
+        }
+        #part2 {
+            background-color: darkcyan;
+            width: 250px;
+            height: 200px;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 3em;
+        }
+
+        nav{
+            margin: 10px auto 40px auto;
+            width: 100%;
+            background-color: whitesmoke;
+            position: sticky;
+            top: 0;
+            
+        }
+        nav li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            list-style: none;
+        }
+        nav li a {
+            text-decoration: none;
+            color: gray;
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            border-bottom: 2px solid transparent;
+        }
+        nav li a:hover {
+            border-bottom: 2px solid darkmagenta;
+            color: darkmagenta;
+        }
+        nav ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .conteneur {
+            margin: 0px 20px;
+            height: 1500px;
+        }
+    </style>
+</head>
+
+<body>
+        <h1>Menu horizontal HTML et CSS avec notre ami sticky</h1>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="#">HTML 5</a></li>
+
+        <li><a href="#">CSS 3</a></li>
+
+        <li><a href="#">JavaScript</a></li>
+
+        <li><a href="#">jQuery</a></li>
+
+      </ul>
+
+    </nav>
+    <div class="conteneur">
+
+            <p>vous me voyez ?</p>
+      
+          </div>
+
+    <br><br><br><br><br>
+    <div id="contener">
+        <div id="entete">
+            klll
+        </div>
+        <div id="menu">
+            <div id="part1"></div>
+            <div id="part2"></div>
+        </div>
+        <div id="contenu">joiseio
+            <div id="i">
+                lksdm,mkse
+            </div>
+        </div>
+        <div id="pied">
+            lkzklzlkkl
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" href="../reset.css"/>
+</head>
+<style>
+        div {
+        width: 500px;
+        height: 100px;
+        background-color: rgb(231, 198, 114);
+        border: 3px solid darkorange;
+    }
+
+    #a1 {
+        animation-name: couleur;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+    }
+    @keyframes couleur {
+        from {
+            background-color: cadetblue;
+        }
+        25% {
+            background-color: blue;
+        }
+        50% {
+            background-color: blueviolet;
+        }
+        to {
+            background-color: aquamarine;
+        }
+    }
+
+    @keyframes bougedela {
+        from {
+            transform: translateX(400px);
+        }
+        25% {
+            transform: rotate(75deg);
+        } 
+        50% {
+            transform: translateY(200px)
+        }
+        75% {
+            
+        }
+        to {
+            
+        }
+    }
+</style>
+<body>
+        <div id="a1">Animation 1</div>
+</body>
+</html>

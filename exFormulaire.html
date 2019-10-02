@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        label {
+            width: 100px;
+            display: inline-block;
+            font-size: 20px;
+            }
+    </style>
+    <form method="POST" action="" id="formPersonne">
+        <fieldset>
+            <legend>infos nominatives</legend>
+        <label>Nom:</label>
+        <input name="nom" type="text" title="Mettre Nom" placeholder="Mettre nom" pattern="text"/>
+        <br>
+        <br>
+        <label>Prénom:</label>
+        <input name="prénom" type="text" title="Mettre Prénom" placeholder="Mettre prénom" />
+        <br>
+        <br>
+        <input type="submit" value="Envoyer les données" />
+        <br>
+        <br>
+    </fieldset>
+    </form>
+    
+    <label>Age</label>
+        <input name="age" type="number" title="Mettre Age" form="formPersonne" max="18" placeholder="Mettre son age" required="number"/>
+
+    <form method="POST" >
+            <fieldset>
+                <legend>Authentification</legend>
+            <label>Login:</label>
+            <input name="login" type="text" title="Mettre login" placeholder="Saisir votre login" pattern="text"/>
+            <br>
+            <br>
+            <label>Mot de passe:</label>
+            <input name="password" type="text" title="Mettre password" placeholder="Mettre votre mot de passe" />
+            <br>
+            <br>
+            <input type="submit" value="Envoyer" />
+    
+            <input type="reset" value="Effacer" />
+        </fieldset>
+        </form>
+        <br>
+        <br>
+        <form method="POST" >
+                <fieldset>
+                    <legend>Formulaire d'inscription</legend>
+                <label>Nom:</label>
+                <input name="nom" type="text" placeholder="Mettre nom" pattern="text"/>
+                <br>
+                <br>
+                <label>Prénom:</label>
+                <input name="prénom" type="text" placeholder="Mettre prénom" />
+                <br>
+                <br>
+                <label>Mail:</label>
+                <input name="email" type="email" placeholder="Mettre email" />
+                <br>
+                <br>
+                <label>Sexe:</label>
+                <input type="radio"" value="m" name="masculin" > masculin
+                <input type="radio" value="f" name="féminin" > féminin
+                <br>
+                <br>
+                <label>Photo:</label>
+                <input type="file" name="Choisir un fichier" placeholder="Choisir un fichier" />
+                <br>
+                <br>
+                <label>Pays:</label>
+                <select name="pays" >
+                        <option>france</option>
+                        <option>italie</option>
+                        <option>norvege</option>
+                        <option>uruguay</option>
+                      </select>
+
+                <br>
+                <br>
+                <label>Langages préférés:</label>
+                <select name="langage" multiple="multiple" size="5" >
+                        <option>PHP</option>
+                        <option>Angular</option>
+                        <option>C++</option>
+                        <option>Javascript</option>
+                      </select>
+                    <br>
+                    <br>
+
+                <label>Domaines d'activités:</label>
+                      
+                    <input type="checkbox" name="domaine1" value="informatique">Informatique
+                    
+                    <input type="checkbox" name="domaine2" value="gestion">Gestion
+                    
+        
+                    <input type="checkbox" name="domaine2" value="pedagogie">Pédagogie
+                   
+
+                <br><br>
+                <input type="submit" value="Envoyer les données">
+                <input type="reset" value="Annuler">
+                <br>
+                <br>
+            </fieldset>
+            </form>
+</body>
+</html>

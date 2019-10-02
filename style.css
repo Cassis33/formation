@@ -1,0 +1,26 @@
+section {
+	background: green;
+	color: yellow;
+	margin: 100px 50px;
+	border: 10px dotted violet;
+	border-radius: 10  15 20 30;
+	padding-top: 40px;
+	height: 100px;
+
+}
+body {
+	font-size: 20px;
+	white-space: normal;
+	
+}
+div {
+	border: 1px solid black;
+	background-color: purple;
+	margin: auto;
+	overflow: ;
+	margin-top: 20px;
+	width: 2000px;
+	height: 300px;
+	padding-top: 50px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 500px;
+        height: 100px;
+        background-color: rgb(231, 198, 114);
+        border: 3px solid darkorange;
+    }
+    #t1 {
+         transition-property: all; /*background, border; */
+        transition-duration: 1s, 4s;
+    }
+    #t1:hover {
+        background-color: brown;
+        border: 3px solid transparent;
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div id="t1">transition 1</div>
+</body>
+</html>
